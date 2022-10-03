@@ -16,7 +16,7 @@ Assim como o Fordismo foi um modo de produção e estilo de vida para época, di
 
 Vamos nomear nosso fluxo de trabalho como workflow e norteá-lo como um sistema de comunicação entre colaboradores, que pode ser feito por meio manual ou através de um software de fluxo de trabalho. Traçados os parâmetros inicia-se uma tarefa, ela passa por vários departamentos e etapas, até a sua finalização. O objetivo é otimizar o caminho agregando mais eficiência e produtividade.
 
-Saindo dessa abordagem geral, podemos entender seu funcionamento partindo do princípio de seu entendimento como estratégia de gestão. Basicamente o BPM(Business Process Management), é uma ferramenta facilitadora para os gestores visualizares as atividades do dia a dia da empresa.
+Saindo dessa abordagem geral, podemos entender seu funcionamento partindo do princípio de seu entendimento como estratégia de gestão. Basicamente o BPM(Business Process Management), como também é conhecido nosso workflow, é uma ferramenta facilitadora para os gestores visualizares as atividades do dia a dia da empresa.
 
 O mapeamento dos processos desenvolvidos torna-se estruturada o que o molda em um aspecto ideal para administrar as atividades de sua organização em formato digital, sem a utilização de papel, que muitas vezes dificulta os processos dentro da empresa por ser feito manualmente, e quanto maior for a demanda, mais problemática se torna a execução de uma atividade utilizando o papel.
 
