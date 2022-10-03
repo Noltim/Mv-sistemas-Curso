@@ -1,26 +1,28 @@
-<h2 align="center">O que a BitKeeper é tão ruim que Linus não gostava? </h2>
+<h2 align="center">Tempos Modernos: Flow de batalha. </h2>
 
-> :construction: Desejos ocultos de Linus :construction:
+> :construction: Pontos de contato :construction:
 
--	Velocidade
--	Projeto simples
--	Forte suporte para desenvolvimento não-linear (milhares de ramos paralelos)
--	Completamente distribuído
--	Capaz de lidar com projetos grandes como o núcleo o Linux com eficiência (velocidade e tamanho dos dados)
--	Gratuidade
->Os tópicos acima resumem a essência da utopia sistemática de controle de versões distribuída, idealizada por Torvalds, o qual, trouxe a existência gigantesca de uma ferramenta usada mundialmente, até então conhecida como GIT. 
+-	Sistema de comunicação;
+-	Fluxo de trabalho;
+-	Eficiência;
+-	Produtividade;
+-	BPM (Business Process Management)
 
-A história controversa para seu surgimento começa por volta de 2005, quando os serviços da BitMover cessaram seu cunho gratuito, após a relação entre a comunidade que desenvolveu o núcleo do Linux e a empresa sofrerem desgastes por possuírem pontos de vistas destintos em relação a serviços open-soucer e a cobrança/imposição de limitações para uso, ou melhor dizendo, restrições significativas na comunidade Linux em troca da licença não paga.
+>A palavra-chave que procuramos dessa resumida da grande critica a burguesia é PROCESSO DE TRABALHO, traduzindo para o contexto que desejamos seria o “desenvolver”, o fluxo que leva para o tão sonhado “objetivo final”, ou seja, nada mais é que a automação de processos das atividades de negócios.
 
-Devido as questões emergentes Linus então resolve projetar um motor gráfico de controle de código com o objetivo de ter um sistema descentralizado permitindo multi-trabalhos divergentes das ferramentas da época.
+Você já deve ter escutado falar de Chaplin e sua tão aclamada obra tempos modernos. A partir dela podemos apreender elementos essenciais intrinsecamente contraditórios da lógica do capital não apenas no processo de trabalho, através da fábrica fordista, mas do cotidiano e do processo de reprodução social.
 
-Os principais motivos, como já supramencionado, e não ditos por Linus na época do uso do BitKeeper eram: 
+Assim como o Fordismo foi um modo de produção e estilo de vida para época, diga-se de passagem, até hoje, constamos que o seu fluxo de produção não necessariamente se aplica a tudo. Partindo deste ponto observamos que cada meio produtor necessita de união em organização e tecnologia para criar um fluxo de trabalho, distribui as tarefas e otimiza o tempo e resultado de sua empresa.
 
-Em primeiro lugar a velocidade. Está era de longe algo que ele nunca havia articulado completamente antes, ou pelo menos não de uma maneira que os projetos existentes pudessem entender. De fato, Linus não gostava de esperar nem que fossem segundos até mesmo para os mais complexos operacionais finalizarem.
+Vamos nomear nosso fluxo de trabalho como workflow e norteá-lo como um sistema de comunicação entre colaboradores, que pode ser feito por meio manual ou através de um software de fluxo de trabalho. Traçados os parâmetros inicia-se uma tarefa, ela passa por vários departamentos e etapas, até a sua finalização. O objetivo é otimizar o caminho agregando mais eficiência e produtividade.
 
-Em segundo o armazenamento de arquivos. O GIT não lidava como os demais sistemas faziam, armazenar patches. Na verdade, ele armazenava versões inteiras de cada arquivo alterado. O que na época foi um choque, pois a curta vista parecia um monte de operações de sistema de arquivo de baixo nível do que um sistema de controle de versão.
+Saindo dessa abordagem geral, podemos entender seu funcionamento partindo do princípio de seu entendimento como estratégia de gestão. Basicamente o BPM(Business Process Management), é uma ferramenta facilitadora para os gestores visualizares as atividades do dia a dia da empresa.
 
-Por fim, Junio C. Hamano deu continuidade a esta obra “inacabada” reunindo os comandos presentes/semelhantes nas ferramentas CVS e Subversions, para um toque final e real caracterização deste como SVD. Levando a total aceitação pela comunidade crescendo de maneira inesperada e rapidamente tornou-se o gerenciador de código mais usado do mundo.
+O mapeamento dos processos desenvolvidos torna-se estruturada o que o molda em um aspecto ideal para administrar as atividades de sua organização em formato digital, sem a utilização de papel, que muitas vezes dificulta os processos dentro da empresa por ser feito manualmente, e quanto maior for a demanda, mais problemática se torna a execução de uma atividade utilizando o papel.
+
+A definição do workflow define claramente todas as atividades que cada um dos profissionais precisa executar, como uma linha de produção mesmo. Isso oferece fluidez ao andamento das tarefas, assim como a redução do tempo gasto na execução de todas elas. Dessa forma, novos projetos podem ser elaborados ou antecipados.
+
+É o mesmo processo de fazer um miojo usando as instruções na embalagem: se cada passo é seguido corretamente, as chances de errar são menores. Desse modo, o workflow auxilia na redução da quantidade de erros e ainda elimina as etapas desnecessárias, ou seja, as que são consideradas gargalos na produção.
 
 
 
