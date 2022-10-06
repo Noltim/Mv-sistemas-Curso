@@ -25,7 +25,7 @@ Esse comando indica o estado do seu repositório.
 > $ git status
 
 <<div align="center">>
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400663-373e0e88-e9e3-4303-81f9-1ee12351921f.png" width="300px" />
 </div>
  
 4 – Desfazer de arquivos não monitorados
@@ -34,7 +34,7 @@ Se fez alguma besteira no arquivo e não lembra do que fez e ainda não deu GIT 
 > git checkout .
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400667-f15c6ae3-1195-45ab-9416-0c636496165a.png" width="300px" />
 </div>
 
 Esse comando não apaga novos arquivos. Para apagar novos arquivos que ainda não foram adicionados ao Stage, execute:
@@ -42,7 +42,7 @@ Esse comando não apaga novos arquivos. Para apagar novos arquivos que ainda nã
 > git clean -df
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400669-7b79cec7-f39f-4a24-99f8-59b5bf1a376d.png" width="300px" />
 </div>
  
 5 – Desfazendo/Removendo arquivos do Stage
@@ -51,7 +51,7 @@ Se você realmente seguiu com a lambança e executou git add e quer desfazer, us
 > git reset
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400671-7e175dd9-aa7e-4868-b679-c3b976f204be.png" width="300px" />
 </div>
 
 Para desfazer as modificações, após o reset use o checkout ou clean mostrados anteriormente.
@@ -65,7 +65,7 @@ OBS: Será criado um novo commit indicando que o último commit foi desfeito.
 OBS²: Esse comando apaga novos arquivos.
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400675-af26eb22-5b11-4d8a-a152-76fc27eb1306.png" width="300px" />
 </div>
  
 6 - Renomear Commit
@@ -74,7 +74,7 @@ Quem nunca esqueceu ou escreveu algo errado no commit? Esse comando te permite r
 > $ git commit --amend
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400678-3558b627-0d3f-47f1-a75f-ef9c9d23c378.png" width="300px" />
 </div>
 
 7 - Listando Branches
@@ -88,7 +88,7 @@ Caso você queira que ele liste também as branches que estão no repositório r
 > $ git branch -a
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400682-a53f5441-cd16-422d-8430-31d8b29bf658.png" width="300px" />
 </div>
  
 8- Criando Branches
@@ -97,7 +97,7 @@ Esse comando cria uma branch no repositório do seu computador.
 > $ git branch nomeDaBranch
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400685-e6741f12-f41e-4b64-b8fd-165b9d6c224a.png" width="300px" />
 </div>
 
 9 - Indo para outra branch
@@ -110,7 +110,7 @@ Se você adicionar -b, uma nova branch será criada.
 > $ git checkout -b minha-nova-branch
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400687-5cc61d79-317d-496c-8dcd-735992cca8a0.png" width="300px" />
 </div>
  
 10 - Excluindo branches
@@ -124,7 +124,7 @@ A opção -D ignora o estado da sua branch, forçando a sua remoção.
 Esse comando apaga apenas a branch local, não removendo branches remotas.
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400689-869ca517-46d8-4ad1-8791-ee51bb37d002.png" width="300px" />
 </div>
  
 Obs: Lembra-se de trocar de branch para um que você não vá deletar para evitar bugs.
@@ -140,7 +140,7 @@ Se você estiver em uma branch e quiser renomear outra, você deve passar primei
 > git branch -m nome-atual novo-nome
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400691-0dc85ad3-c0b8-4132-af94-cd4f4950ec68.png" width="300px" />
 </div>
 
  
@@ -151,7 +151,7 @@ Para visualizar o histórico de commits basta usar o seguinte comando:
 > $ git log
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400692-e4648592-cbbe-4fff-9fef-dd3f6b477550.png" width="300px" />
 </div>
 
  
@@ -160,7 +160,7 @@ Para visualizar o histórico de commits basta usar o seguinte comando:
 É possível mandar imprimir o histórico exibindo as branches do repositório com algo mais legível e com cores com um comando. Teremos um resultado parecido com esse:
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400693-68b2e637-aeb8-459d-abf2-b37f4ece412a.png" width="300px" />
 </div>
  
 O comando é um pouco comprido:
@@ -195,7 +195,7 @@ Você pode fazer vários stashes. Para listá-los, execute o comando:
 > $ git stash list
 
 <div align="center">
-<img src=" " width="300px" />
+<img src="https://user-images.githubusercontent.com/103793612/194400697-bbb5a763-a637-4098-8bb2-b971219620b6.png" width="300px" />
 </div>
  
 14.3 - Recuperando modificações
