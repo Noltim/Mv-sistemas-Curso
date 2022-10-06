@@ -5,18 +5,18 @@ Para que os arquivos de uma pasta possam ser upados no Git, é preciso iniciar o
 
 > $ git init
 
-div align="center"
-img src="https://user-images.githubusercontent.com/103793612/194394717-e1fdcc59-1f9e-4c0a-80d7-8d5e7385a586.png" width="300px" /
-/div
+<div align="center">
+<img src="https://user-images.githubusercontent.com/103793612/194394717-e1fdcc59-1f9e-4c0a-80d7-8d5e7385a586.png" width="300px" />
+</div>
 
 2 - Apagando um repositório
 Apaga a pasta git (pasta oculta) ou digitar o comando abaixo deleta somente as informações do repositório vinculadas ao git init.
 
 > $ rm -rf .git
 
-div align="center"
-img src="https://user-images.githubusercontent.com/103793612/194396462-c4ace37f-7d0f-45cc-ad62-3665f96c3a4c.png" width="300px" /
-/div
+<div align="center">
+<img src="https://user-images.githubusercontent.com/103793612/194396462-c4ace37f-7d0f-45cc-ad62-3665f96c3a4c.png" width="300px" />
+</div>
 
  
 3 -Listando Arquivos Modificados
@@ -24,35 +24,35 @@ Esse comando indica o estado do seu repositório.
 
 > $ git status
 
-div align="center"
-img src=" " width="300px" /
-/div
+<<div align="center">>
+<img src=" " width="300px" />
+</div>
  
 4 – Desfazer de arquivos não monitorados
 Se fez alguma besteira no arquivo e não lembra do que fez e ainda não deu GIT ADD, você pode executar o comando abaixo e removerá as alterações para o último commit. 
 
 > git checkout .
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
 
 Esse comando não apaga novos arquivos. Para apagar novos arquivos que ainda não foram adicionados ao Stage, execute:
 
 > git clean -df
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 5 – Desfazendo/Removendo arquivos do Stage
 Se você realmente seguiu com a lambança e executou git add e quer desfazer, use o reset.
 
 > git reset
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
 
 Para desfazer as modificações, após o reset use o checkout ou clean mostrados anteriormente.
 
@@ -64,18 +64,18 @@ Caso você tenha feito alterações e a lambança tenha escorrido pela calça (r
 OBS: Será criado um novo commit indicando que o último commit foi desfeito.
 OBS²: Esse comando apaga novos arquivos.
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 6 - Renomear Commit
 Quem nunca esqueceu ou escreveu algo errado no commit? Esse comando te permite renomear a mensagem do último commit feito:
 
 > $ git commit --amend
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
 
 7 - Listando Branches
 Esse comando lista todas as branches presentes no repositório do seu computador.
@@ -87,18 +87,18 @@ Caso você queira que ele liste também as branches que estão no repositório r
 
 > $ git branch -a
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 8- Criando Branches
 Esse comando cria uma branch no repositório do seu computador.
 
 > $ git branch nomeDaBranch
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
 
 9 - Indo para outra branch
 Para mudar para uma outra branch basta usar o comando checkout, passando o nome da branch.
@@ -109,9 +109,9 @@ Se você adicionar -b, uma nova branch será criada.
 
 > $ git checkout -b minha-nova-branch
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 10 - Excluindo branches
 Para excluir uma branch local basta executar o comando branch com -d ou -D, passando o nome da branch que você quer apagar.
@@ -123,9 +123,9 @@ A opção -d é mais segura, pois ela só apaga a branch se você já tiver feit
 A opção -D ignora o estado da sua branch, forçando a sua remoção.
 Esse comando apaga apenas a branch local, não removendo branches remotas.
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 Obs: Lembra-se de trocar de branch para um que você não vá deletar para evitar bugs.
 
@@ -139,9 +139,9 @@ Se você estiver em uma branch e quiser renomear outra, você deve passar primei
 
 > git branch -m nome-atual novo-nome
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
 
  
 12 - Visualizando o Histórico de Commits
@@ -150,18 +150,18 @@ Para visualizar o histórico de commits basta usar o seguinte comando:
 
 > $ git log
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
 
  
 13 - Exibir branches em um modo mais legível
 
 É possível mandar imprimir o histórico exibindo as branches do repositório com algo mais legível e com cores com um comando. Teremos um resultado parecido com esse:
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 O comando é um pouco comprido:
 
@@ -194,9 +194,9 @@ Você pode fazer vários stashes. Para listá-los, execute o comando:
 
 > $ git stash list
 
-div align="center"
-img src=" " width="300px" /
-/div
+<div align="center">
+<img src=" " width="300px" />
+</div>
  
 14.3 - Recuperando modificações
 
