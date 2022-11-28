@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <table>
+      <tr>
+        <td>Nome</td>
+        <td>Tipo</td>
+      </tr>
+      <% for(var i=0; i< livros.length; i++) { %>
+        <tr>
+          <td><%= livros[i].nome %></td>
+          <td><%= livros[i].tipo %></td>
+        </tr>
+        <% } %>
+    </table>
+    <a href="/cadastro">Cadastrar livro</a>
+  </body>
+</html>
