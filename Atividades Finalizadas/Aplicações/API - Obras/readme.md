@@ -74,7 +74,7 @@ Para conseguir implantar o projeto siga as seguintes recomendações:
 ```
 1° - Faça o clone do projeto 
 ```
-- *[Projeto]([https://github.com/Noltim/PA-PROJETO-FINAL-JAVA-SPRING-BOOT](https://github.com/Noltim/Mv-sistemas-Curso/tree/main/Atividades%20Finalizadas/Aplica%C3%A7%C3%B5es/API%20-%20Obras))*
+- *[Projeto](https://github.com/Noltim/Mv-sistemas-Curso/tree/main/Atividades%20Finalizadas/Aplica%C3%A7%C3%B5es/API%20-%20Obras)*
 
 ```
 2° - Abra a pasta baixada no VS code
@@ -102,12 +102,12 @@ Para conseguir implantar o projeto siga as seguintes recomendações:
 ```
 
 
-Para conferir os endpoints e como aplicar confira o [DOCUMENTAÇÃO SWAGGER](http://localhost:8080/swagger-ui/index.html#/) da api.
+Para conferir os endpoints e como aplicar confira o [DOCUMENTAÇÃO SWAGGER](http://localhost:8080/swagger-ui/index.html) da api.
 
 
 ## 📌 Versão
 
-Nós usamos [GIT](https://git-scm.com/downloads) para controle de versão no [GITHUB]([https://github.com/Noltim/PA-PROJETO-FINAL-JAVA-SPRING-BOOT](https://github.com/Noltim/Mv-sistemas-Curso/tree/main/Atividades%20Finalizadas/Aplica%C3%A7%C3%B5es/API%20-%20Obras)). Para as versões disponíveis, observe as [tags neste repositório]([https://github.com/Noltim/PA-PROJETO-FINAL-JAVA-SPRING-BOOT](https://github.com/Noltim/Mv-sistemas-Curso/tree/main/Atividades%20Finalizadas/Aplica%C3%A7%C3%B5es/API%20-%20Obras)). 
+Nós usamos [GIT](https://git-scm.com/downloads) para controle de versão no [GITHUB](https://github.com/Noltim/Mv-sistemas-Curso/tree/main/Atividades%20Finalizadas/Aplica%C3%A7%C3%B5es/API%20-%20Obras). Para as versões disponíveis, observe as [tags neste repositório](https://github.com/Noltim/Mv-sistemas-Curso/tree/main/Atividades%20Finalizadas/Aplica%C3%A7%C3%B5es/API%20-%20Obras). 
 
 
 
