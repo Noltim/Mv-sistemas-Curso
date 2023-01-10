@@ -1,37 +1,27 @@
 package io.github.noltim.localizacao;
 
-import io.github.noltim.localizacao.domain.entity.Cidade;
-import io.github.noltim.localizacao.domain.repository.CidadeRepository;
+import io.github.noltim.localizacao.service.CidadeService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.transaction.annotation.Transactional;
 
 
 @SpringBootApplication
 public class LocalizacaoApplication implements CommandLineRunner {
 
-    private CidadeRepository cidadeRepository;
+    private CidadeService cidadeService;
 
-    public LocalizacaoApplication(CidadeRepository cidadeRepository) {
-        this.cidadeRepository = cidadeRepository;
+    public LocalizacaoApplication(CidadeService cidadeService) {
+        this.cidadeService = cidadeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
-        listarCidade();
+
+        cidadeService.listarCidadesByNomeSpecs();
     }
 
-    @Transactional
-    void salvarCidade() {
-        var cidade = new Cidade(1L, "São Paulo", 12349555L);
-        cidadeRepository.save(cidade);
-    }
 
-    @Transactional
-    void listarCidade() {
-        cidadeRepository.findAll().forEach(System.out::println);
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(LocalizacaoApplication.class, args);
