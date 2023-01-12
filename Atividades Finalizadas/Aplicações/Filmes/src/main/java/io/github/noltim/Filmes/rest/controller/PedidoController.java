@@ -34,14 +34,14 @@ public class PedidoController {
         return pedido.getId();
     }
 
-//    @GetMapping("{id}")
-//    public InformacoesPedidoDTO getById(@PathVariable Integer id){
-//        return pedidoService
-//                .obterPedidoCompleto(id)
-//                .map(pedido -> converter(pedido))
-//                .orElseThrow(()->
-//                        new ResponseStatusException(NOT_FOUND, "Pedido não encontrado!"));
-//    }
+    @GetMapping("{id}")
+    public InformacoesPedidoDTO getById(@PathVariable Integer id){
+        return pedidoService
+                .obterPedidoCompleto(id)
+                .map(pedido -> converter(pedido))
+                .orElseThrow(()->
+                        new ResponseStatusException(NOT_FOUND, "Pedido não encontrado!"));
+    }
 
     private InformacoesPedidoDTO converter(Pedido pedido){
         return InformacoesPedidoDTO

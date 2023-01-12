@@ -74,10 +74,10 @@ public class PedidoServiceImpl implements PedidoService {
         }).collect(Collectors.toList());
     }
 
-//    @Override
-//    public Optional<Pedido> obterPedidoCompleto(Integer id) {
-//        return pedidoRepository.findByIdFetchItens(id);
-//    }
+    @Override
+    public Optional<Pedido> obterPedidoCompleto(Integer id) {
+        return pedidoRepository.findByIdFetchItens(id);
+    }
 
 
 }

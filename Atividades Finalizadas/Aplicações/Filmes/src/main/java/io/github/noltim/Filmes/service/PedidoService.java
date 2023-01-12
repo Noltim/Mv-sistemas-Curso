@@ -9,5 +9,5 @@ public interface PedidoService {
 
     Pedido salvar(PedidoDTO dto);
 
-//    Optional<Pedido> obterPedidoCompleto(Integer id);
+    Optional<Pedido> obterPedidoCompleto(Integer id);
 }
