@@ -4,10 +4,12 @@ import io.github.noltim.Filmes.domain.entity.Cliente;
 import io.github.noltim.Filmes.domain.entity.Filmes;
 import io.github.noltim.Filmes.domain.entity.ItemPedido;
 import io.github.noltim.Filmes.domain.entity.Pedido;
+import io.github.noltim.Filmes.domain.enums.StatusPedido;
 import io.github.noltim.Filmes.domain.repository.ClienteRepository;
 import io.github.noltim.Filmes.domain.repository.FilmesRepository;
 import io.github.noltim.Filmes.domain.repository.ItemPedidoRepository;
 import io.github.noltim.Filmes.domain.repository.PedidoRepository;
+import io.github.noltim.Filmes.exception.PedidoNaoEncontradoException;
 import io.github.noltim.Filmes.exception.RegraNegocioException;
 import io.github.noltim.Filmes.rest.dto.ItemPedidoDTO;
 import io.github.noltim.Filmes.rest.dto.PedidoDTO;
@@ -45,6 +47,7 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setTotal(dto.getTotal());
         pedido.setDataPedido(LocalDate.now());
         pedido.setCliente(cliente);
+        pedido.setStatus(StatusPedido.REALIZADO);
 
         List<ItemPedido> itemsPedido = converterItems(pedido, dto.getItems());
         pedidoRepository.save(pedido);
@@ -77,6 +80,17 @@ public class PedidoServiceImpl implements PedidoService {
     @Override
     public Optional<Pedido> obterPedidoCompleto(Integer id) {
         return pedidoRepository.findByIdFetchItens(id);
+    }
+
+    @Override
+    @Transactional
+    public void atualizaStatus(Integer id, StatusPedido statusPedido) {
+        pedidoRepository
+                .findById(id)
+                .map(pedido -> {
+                    pedido.setStatus(statusPedido);
+                    return pedidoRepository.save(pedido);
+                }).orElseThrow(()-> new PedidoNaoEncontradoException());
     }
 
 

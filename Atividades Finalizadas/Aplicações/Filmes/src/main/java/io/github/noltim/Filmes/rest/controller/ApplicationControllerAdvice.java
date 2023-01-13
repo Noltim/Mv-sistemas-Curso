@@ -1,5 +1,6 @@
 package io.github.noltim.Filmes.rest.controller;
 
+import io.github.noltim.Filmes.exception.PedidoNaoEncontradoException;
 import io.github.noltim.Filmes.exception.RegraNegocioException;
 import io.github.noltim.Filmes.rest.ApiErros;
 import org.springframework.http.HttpStatus;
@@ -14,5 +15,10 @@ public class ApplicationControllerAdvice {
     public ApiErros handleRegraNegocioException(RegraNegocioException ex) {
         String mensagemErro = ex.getMessage();
         return new ApiErros(mensagemErro);
+    }
+    @ExceptionHandler(PedidoNaoEncontradoException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiErros handlePedidoNotFoundException(PedidoNaoEncontradoException ex){
+            return new ApiErros(ex.getMessage());
     }
 }

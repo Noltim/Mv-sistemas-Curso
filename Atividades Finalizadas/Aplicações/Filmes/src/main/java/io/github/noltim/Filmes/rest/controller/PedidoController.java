@@ -2,6 +2,8 @@ package io.github.noltim.Filmes.rest.controller;
 
 import io.github.noltim.Filmes.domain.entity.ItemPedido;
 import io.github.noltim.Filmes.domain.entity.Pedido;
+import io.github.noltim.Filmes.domain.enums.StatusPedido;
+import io.github.noltim.Filmes.rest.dto.AtualizacaoStatusPedidoDTO;
 import io.github.noltim.Filmes.rest.dto.InformacaoItemPedidoDTO;
 import io.github.noltim.Filmes.rest.dto.InformacoesPedidoDTO;
 import io.github.noltim.Filmes.rest.dto.PedidoDTO;
@@ -43,6 +45,13 @@ public class PedidoController {
                         new ResponseStatusException(NOT_FOUND, "Pedido não encontrado!"));
     }
 
+    @PatchMapping("{id}")
+    @ResponseStatus(NO_CONTENT)
+    public void updateStatus(@PathVariable Integer id, @RequestBody AtualizacaoStatusPedidoDTO dto){
+        String novoStatus = dto.getNovoStatus();
+        pedidoService.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
+    }
+
     private InformacoesPedidoDTO converter(Pedido pedido){
         return InformacoesPedidoDTO
                 .builder()
@@ -51,7 +60,7 @@ public class PedidoController {
                 .cpf(pedido.getCliente().getCpf())
                 .nomeCliente(pedido.getCliente().getNome())
                 .total(pedido.getTotal())
-//                .status(pedido.getStatus().name())
+                .status(pedido.getStatus().name())
                 .items(converter(pedido.getItens()))
                 .build();
     }
