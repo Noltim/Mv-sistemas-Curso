@@ -11,12 +11,16 @@ import io.github.noltim.Filmes.domain.repository.ItemPedidoRepository;
 import io.github.noltim.Filmes.domain.repository.PedidoRepository;
 import io.github.noltim.Filmes.exception.PedidoNaoEncontradoException;
 import io.github.noltim.Filmes.exception.RegraNegocioException;
+import io.github.noltim.Filmes.rest.dto.InformacoesPedidoDTO;
 import io.github.noltim.Filmes.rest.dto.ItemPedidoDTO;
 import io.github.noltim.Filmes.rest.dto.PedidoDTO;
 import io.github.noltim.Filmes.service.PedidoService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -32,7 +36,6 @@ public class PedidoServiceImpl implements PedidoService {
     private final PedidoRepository pedidoRepository;
     private final ItemPedidoRepository itemPedidoRepository;
     private final FilmesRepository filmesRepository;
-
 
 
     @Override
@@ -64,17 +67,17 @@ public class PedidoServiceImpl implements PedidoService {
         return items
                 .stream()
                 .map(dto -> {
-            Integer idFilme = dto.getFilme();
-            Filmes filme = filmesRepository
-                    .findById(idFilme)
-                    .orElseThrow(() -> new RegraNegocioException("Código do filme inválido"));
+                    Integer idFilme = dto.getFilme();
+                    Filmes filme = filmesRepository
+                            .findById(idFilme)
+                            .orElseThrow(() -> new RegraNegocioException("Código do filme inválido"));
 
-            ItemPedido itemPedido = new ItemPedido();
-            itemPedido.setQuantidade(dto.getQuantidade());
-            itemPedido.setPedido(pedido);
-            itemPedido.setFilme(filme);
-            return itemPedido;
-        }).collect(Collectors.toList());
+                    ItemPedido itemPedido = new ItemPedido();
+                    itemPedido.setQuantidade(dto.getQuantidade());
+                    itemPedido.setPedido(pedido);
+                    itemPedido.setFilme(filme);
+                    return itemPedido;
+                }).collect(Collectors.toList());
     }
 
     @Override
@@ -90,7 +93,12 @@ public class PedidoServiceImpl implements PedidoService {
                 .map(pedido -> {
                     pedido.setStatus(statusPedido);
                     return pedidoRepository.save(pedido);
-                }).orElseThrow(()-> new PedidoNaoEncontradoException());
+                }).orElseThrow(() -> new PedidoNaoEncontradoException());
+    }
+
+    @Override
+    public InformacoesPedidoDTO obterPedidos() {
+        return null;
     }
 
 
