@@ -49,7 +49,7 @@ public class PedidoServiceImpl implements PedidoService {
         List<ItemPedido> itemsPedido = converterItems(pedido, dto.getItems());
         pedidoRepository.save(pedido);
         itemPedidoRepository.saveAll(itemsPedido);
-        pedido.setItems(itemsPedido);
+        pedido.setItens(itemsPedido);
         return pedido;
 
     }
