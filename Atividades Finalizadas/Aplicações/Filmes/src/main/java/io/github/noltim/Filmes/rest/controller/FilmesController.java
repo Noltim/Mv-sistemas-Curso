@@ -8,6 +8,7 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.Valid;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -35,7 +36,7 @@ public class FilmesController {
 
     @PostMapping
     @ResponseStatus(CREATED)
-    public Filmes save(@RequestBody Filmes filme) {
+    public Filmes save(@RequestBody @Valid Filmes filme) {
         filme.setDataRegistro(LocalDate.now());
         return filmesRepository.save(filme);
     }
@@ -55,7 +56,7 @@ public class FilmesController {
 
     @PutMapping("{id}")
     @ResponseStatus(NO_CONTENT)
-    public void update(@PathVariable Integer id, @RequestBody Filmes filme) {
+    public void update(@PathVariable Integer id, @RequestBody @Valid Filmes filme) {
         filmesRepository
                 .findById(id)
                 .map(filmeExistente -> {
